@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 1 Syllabus | A Course on Advanced Regression Models, Causal Inference, and Data Visualization</title>
+  <meta name="description" content="These notes accompany POL 683" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 1 Syllabus | A Course on Advanced Regression Models, Causal Inference, and Data Visualization" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="These notes accompany POL 683" />
+  <meta name="github-repo" content="crweber9874/advancedRegression" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 1 Syllabus | A Course on Advanced Regression Models, Causal Inference, and Data Visualization" />
+  
+  <meta name="twitter:description" content="These notes accompany POL 683" />
+  
+
+<meta name="author" content="Christopher Weber" />
+
+
+<meta name="date" content="2024-08-26" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="introduction.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">POL 683</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#section" id="toc-section"></a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="syllabus.html"><a href="syllabus.html"><i class="fa fa-check"></i><b>1</b> Syllabus</a>
+<ul>
+<li class="chapter" data-level="" data-path="syllabus.html"><a href="syllabus.html#pol-683-advanced-regression-analysis"><i class="fa fa-check"></i>POL 683: Advanced Regression Analysis</a>
+<ul>
+<li class="chapter" data-level="" data-path="syllabus.html"><a href="syllabus.html#fall-2024"><i class="fa fa-check"></i>Fall 2024</a></li>
+</ul></li>
+<li class="chapter" data-level="1.1" data-path="syllabus.html"><a href="syllabus.html#course-description"><i class="fa fa-check"></i><b>1.1</b> Course Description</a></li>
+<li class="chapter" data-level="1.2" data-path="syllabus.html"><a href="syllabus.html#learning-objectives"><i class="fa fa-check"></i><b>1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="1.3" data-path="syllabus.html"><a href="syllabus.html#grades"><i class="fa fa-check"></i><b>1.3</b> Grades</a></li>
+<li class="chapter" data-level="1.4" data-path="syllabus.html"><a href="syllabus.html#course-outline"><i class="fa fa-check"></i><b>1.4</b> Course Outline</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="syllabus.html"><a href="syllabus.html#building-a-statistical-model"><i class="fa fa-check"></i><b>1.4.1</b> Building a Statistical Model</a></li>
+<li class="chapter" data-level="1.4.2" data-path="syllabus.html"><a href="syllabus.html#estimation-and-model-fit"><i class="fa fa-check"></i><b>1.4.2</b> Estimation and Model Fit</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>2</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="introduction.html"><a href="introduction.html#the-logic-of-inference"><i class="fa fa-check"></i><b>2.1</b> The Logic of Inference</a></li>
+<li class="chapter" data-level="2.2" data-path="introduction.html"><a href="introduction.html#conditional-probabilities-continued-bayes-rule"><i class="fa fa-check"></i><b>2.2</b> Conditional Probabilities, Continued: Bayes’ Rule</a></li>
+<li class="chapter" data-level="2.3" data-path="introduction.html"><a href="introduction.html#two-traditions"><i class="fa fa-check"></i><b>2.3</b> Two Traditions</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="introduction.html"><a href="introduction.html#an-example-bernoulli-trials"><i class="fa fa-check"></i><b>2.3.1</b> An Example: Bernoulli Trials</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="introduction.html"><a href="introduction.html#simulation-and-the-likelihood-function"><i class="fa fa-check"></i><b>2.4</b> Simulation and the Likelihood Function</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="introduction.html"><a href="introduction.html#bayesian-analysis"><i class="fa fa-check"></i><b>2.4.1</b> Bayesian Analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="introduction.html"><a href="introduction.html#quick-review"><i class="fa fa-check"></i><b>2.5</b> Quick Review</a></li>
+<li class="chapter" data-level="2.6" data-path="introduction.html"><a href="introduction.html#properties-of-estimators"><i class="fa fa-check"></i><b>2.6</b> Properties of Estimators</a></li>
+<li class="chapter" data-level="2.7" data-path="introduction.html"><a href="introduction.html#finite-sample-properties"><i class="fa fa-check"></i><b>2.7</b> Finite Sample Properties</a></li>
+<li class="chapter" data-level="2.8" data-path="introduction.html"><a href="introduction.html#asymptotic-properties"><i class="fa fa-check"></i><b>2.8</b> Asymptotic Properties</a>
+<ul>
+<li class="chapter" data-level="2.8.1" data-path="introduction.html"><a href="introduction.html#the-bias-variance-tradeoff"><i class="fa fa-check"></i><b>2.8.1</b> The Bias Variance Tradeoff</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Course on Advanced Regression Models, Causal Inference, and Data Visualization</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="syllabus" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">Chapter 1</span> Syllabus<a href="syllabus.html#syllabus" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="pol-683-advanced-regression-analysis" class="section level2 unnumbered hasAnchor">
+<h2>POL 683: Advanced Regression Analysis<a href="syllabus.html#pol-683-advanced-regression-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="fall-2024" class="section level3 unnumbered hasAnchor">
+<h3>Fall 2024<a href="syllabus.html#fall-2024" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Tuesdays 9:00PM - 11:30AM</p>
+<p><strong>Instructor:</strong></p>
+<p>Christopher Weber, PhD</p>
+<p>School of Government and Public Policy</p>
+<p>University of Arizona 333</p>
+<p>Social Sciences Building</p>
+<p><a href="mailto:chrisweber@arizona.edu" class="email">chrisweber@arizona.edu</a></p>
+<p>Office Hours: T 12:00PM-1:30PM (and by appointment).</p>
+</div>
+</div>
+<div id="course-description" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> Course Description<a href="syllabus.html#course-description" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The purpose of this course is to introduce students to advanced techniques in regression, statistical computation, and techniques in scientific reproducibility and transparency. Students in this course should be very familiar with linear regression, as well as the Gauss-Markov assumptions underlying the classical linear model (i.e., POL 682). In this course, we will consider a variety of regression techniques for categorical and limited data. It is essential to remain up-to-date on the readings, as well as apply the reviewed methods to existing data.</p>
+<p>The course will progress through several related sections. The first part will focus on several theoretical factors pertaining to statistical inference. We will start by considering two fundamental approaches underlying inference, the likelihood principle and Bayes’ rule. We will also re-consider the linear model, the Gauss-Markov assumptions, and we will review several concepts and statistical distributions. In this section we will also consider the practical trade off researchers encounter pertaining to efficiency and bias.</p>
+<p>In the second section, we will move to discrete dependent and limited variables. In practice, it is quite rare to encounter dependent variables that are continuous and normally distributed. In circumstances with binary, ordinal, and other multicategory dependent variables, the Gauss-Markov assumptions will be violated, thus rendering OLS an inappropriate choice. At this juncture, we will use both maximum likelihood (ML) and Bayesian methods to estimate logit, probit, multinomial logit/probit, and ordinal logit/probit models.</p>
+<p>Political scientists often encounter datasets that involve event counts (e.g., war casualties, number of conflict events, elections won by a candidate). These variables rarely follow a normal distribution; instead, they are heavily skewed. After the logit/probit weeks, we’ll consider several type of count-oriented regression models, including the Poisson, Negative Binomial, and “Hurdle” models. We will then transition to censored and sample selection models.</p>
+<p>In the final section, we will consider a variety of topics that extend the models from the previous weeks. For instance, “endogeneity” is a common problem to arise in applied settings – an independent variable is correlated with the error term. We’ll look this problem in several ways, followed with several common solutions. We will examine two-stage least squares, three-stage least squares, and matching methods.Finally, we will examine hierarchical models.</p>
+<p>Three major points need to be emphasized. First, many of the statistical methods build on models discussed in previous weeks. It is essential to keep up-to-date on readings, and if there is something that confuses you, please see me as soon as possible. Second, I find that the best way to learn these techniques is to implement them. I strongly recommend you find a dataset and work with this dataset throughout the semester. Even if your analysis is not always substantively interesting, at the very least, you will have the code for future use. Third, I strongly encourage you to give yourself sufficient time to complete the course requirements. One of the worst ways to learn statistics is through cramming and completing assignments at the very last minute. As you likely know, I am flexible with due dates and generally accept late assignments. Don’t take advantage of this policy! Handing things in late and consistently placing other obligations before this class has the potential to adversely impact what you learn.</p>
+</div>
+<div id="learning-objectives" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> Learning Objectives<a href="syllabus.html#learning-objectives" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In this class, students will complete the following.</p>
+<ul>
+<li><p>Identify the tools involved in advanced regression analysis.</p></li>
+<li><p>Use these methods in applied settings.</p></li>
+<li><p>Understand the appropriate regression analysis in various settings.</p></li>
+</ul>
+<p><em>Required Course Readings</em></p>
+<p>Long, J. Scott. 1997. <em>Regression Models for Categorical and Limited Dependent Variables</em>. Sage: New York.</p>
+<p>McElreath, Richard 2020. Statistical Rethinking: A Bayesian Course with Examples in Stan and R.Cambridge: Cambridge University Press.</p>
+<p>Additional Required Readings</p>
+<p>I have assigned a number of journal articles, which may be accessed through the University of Arizona Library. They are all available for download through JSTOR and/or e-journals.</p>
+<p><em>Recommended Readings</em></p>
+<p>Eliason, Scott. 1993. Maximum Likelihood Estimation: Logic and Practice. Thousand Oaks, CA: Sage.</p>
+<p>Fox, John. 2008. Applied Regression Analysis and Generalized Linear Models, Second Edition. Thousand Oaks, California: Sage.</p>
+<p>Gelman, Andrew, John Carlin, Hal Stern, David Dunson, Aki Vehtari, and Donald Rubin. 2014. Bayesian Data Analysis, Third Edition. CRC Press: New York.</p>
+<p>King, Gary. 1998. Unifying Political Methodology: The Likelihood Theory of Statistical Inference. Michigan University Press: Ann Arbor.</p>
+<p>Berry, William and Stanley Feldman. 1985 Multiple Regression In Practice. Newbury, CA: Sage.</p>
+<p>Gelman, Andrew and Jennifer Hill. 2007.Data Analysis Using Regression and Multilevel/Hierarchical Models. Cambridge: Cambridge University Press.</p>
+<p>William H. Greene. Econometric Analysis, 8th Edition. New York: Pearson. (From 682)</p>
+<p><strong>Statistical Software</strong></p>
+<p>There are many statistical software packages available, all of which will perform the functions explored in this class. We will be relying on <em>R</em>, a free statistical program available for Mac, Windows, and Linux. R may be downloaded from the CRAN website (<a href="http://www.r-project.org" class="uri">http://www.r-project.org</a>). The CRAN site also includes a variety of user’s manuals, which I suggest you consult early in the semester (if you are unfamiliar with the R language).</p>
+<p>We will explore a variety of Rfunctions throughout the semester. I will assume that you know the “basics,” such as opening a dataset, accessing variables, and creating new variables. I will also assume that you can run and estimate simple linear regression models, manipulate/recode data, and access saved objects.</p>
+<p>We will also rely heavily on the <strong><em>Stan</em></strong> language for Bayesian models. Stan can be run on a variety of platforms; I would recommend using R. Please follow the instructions on this page:</p>
+<p><a href="https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started" class="uri"><em>https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started</em></a></p>
+<p>Also, download and start following the Stan User’s Manual:</p>
+<p><a href="http://mc-stan.org/documentation/" class="uri"><em>http://mc-stan.org/documentation/</em></a></p>
+<p>I strongly recommend you install Stan in the first week of the semester. Occasionally, problems arise. These should be addressed early in the semester.</p>
+<p>There is a really easy-to-use package in R called brms. We’ll use it throughout the term – it follows the structure of a <em>lm</em> call, but compiles and runs a stan regression model.</p>
+<p><em>Open Science</em></p>
+<p>This class strives to advance an open science framework, a shift in the basic and social sciences to make research, data, code, and publications open and accessible. In this class, we will discuss scientific techniques that promote collaboration, transparency, and reproducibility. This means we will generally rely on free tools – like R – public repositories and develop research protocols that are transparent and well documented. In practice, this means:</p>
+<ul>
+<li><p>We will regularly use open source software, like R.</p></li>
+<li><p>We will develop open source code, by posting code on Github.</p></li>
+<li><p>We will generate modular computer code.</p></li>
+<li><p>We will generate code that produces reproducible examples.</p></li>
+<li><p>We will generate clear clear documentation.</p></li>
+<li><p>In addition to a variety of packages in R, we will rely on one built for this class (and very much, in production). It is called <strong>advancedRegression</strong>. You will periodically need to re-install package, as we’ll make updates through the semester.</p></li>
+</ul>
+<p><strong>Collaboration</strong>. I tend to find that the most useful way to learn statistics is to practice statistics. I suspect this class will be far easier if you take the time (i.e., a few hours every week) to implement the procedures we discuss in class. I will make most of my code for this class available through github. We’ll spend some time on basic github operations in this cousre, so there is no need to set up anything in advance (simply be sure you have a github acct.)</p>
+<p><strong>Github</strong> is a tool for version control and collaboration. You should create agithub user account during the first week, in addition to acquainting yourself with the service. Please also read some of the online tutorials regarding github and how to set it up with Rstudio orR. If you use an email other than your University of Arizona email, please let me know.</p>
+<p><em>Important Information </em></p>
+<p>If you feel sick, or may have been in contact with someone who is infectious, stay home. Except for seeking medical care, avoid contact with others and do not travel.</p>
+<p>The UA policy regarding absences on and accommodation of religious holidays is available here: (<a href="http://deanofstudents.arizona.edu/religiousobservanceandpractice" class="uri">http://deanofstudents.arizona.edu/religiousobservanceandpractice</a>. Visit the UArizona COVID-19 page for regular updates.</p>
+<p>Life challenges: If you are experiencing unexpected barriers to your success in your courses, please note the Dean of Students Office is a central support resource for all students and may be helpful. The Dean of Students Office can be reached at 520-621-2057 or <a href="mailto:DOS-deanofstudents@email.arizona.edu" class="email">DOS-deanofstudents@email.arizona.edu</a>.</p>
+<p>Physical and mental-health challenges: If you are facing physical or mental health challenges this semester, please note that Campus Health provides quality medical and mental health care. For medical appointments, call (520-621-9202. For After Hours care, call (520) 570-7898. For the Counseling and Psych Services (CAPS) 24/7 hotline, call (520) 621-3334.</p>
+<p>Equipment and software requirements: For this class you will need daily access to the following hardware: laptop or web-enabled device with webcam and microphone; regular access to reliable internet signal; ability to download and run the following software: R/RStudio. You should install rstan, tidy, dplyr, ggplot2, pscl, and nnet packages within the first week of the course.</p>
+<p>Staying current: You are required to complete course assignments by the due date.</p>
+<p>Students who turn in an assignment on the due date but after the beginning of class will lose a minimum of one letter grade. An additional letter grade will be deducted for each day the assignment is late. Depending on where we are in the class, I may decide to alter a due date. Any changes will be announced in classes. Makeup exams or assignments will be allowed only in the case of university excused absences. Again, documentation must be provided.</p>
+<p>Threatening behavior is unacceptable and will be reported. The Arizona Board of Regents’ Student Code of Conduct, ABOR Policy 5-308, prohibits threats of physical harm to any member of the University community, including to one’s self. See: <a href="http://policy.arizona.edu/threatening-behavior-students" class="uri">http://policy.arizona.edu/threatening-behavior-students</a>.</p>
+<p>It is the University’s goal that learning experiences be as accessible as possible. If you anticipate or experience physical or academic barriers based on disability, please let me know immediately so that we can discuss options. You are also welcome to contact Disability Resources (520-621-3268) to establish reasonable accommodations. Please be aware that the accessible table and chairs in this room should remain available for students who find that standard classroom seating is not usable.</p>
+<p>It is your responsibility to complete all works assigned in this course (e.g., tests, assignments) in full observation of the Student Code of Academic Integrity. Students are encouraged to share intellectual views and discuss freely the principles and applications of course materials. However, graded work/exercises must be the product of independent effort unless otherwise instructed. Students are expected to adhere to the UA Code of Academic Integrity as described in the UA General Catalog. See: <a href="http://deanofstudents.arizona.edu/codeofacademicintegrity" class="uri">http://deanofstudents.arizona.edu/codeofacademicintegrity</a>.</p>
+<p>In addition, the University Libraries have some excellent tips for avoiding plagiarism available at: <a href="http://\url%7Bwww.library.arizona.edu/help/tutorials/plagiarism/index.html" class="uri">www.library.arizona.edu/help/tutorials/plagiarism/index.html</a>.</p>
+<p>According to Section D (6) (a) of the University’s Intellectual Property Policy (which is available at <a href="http://www.ott.arizona.edu/uploads/ip_policy.pdf" class="uri">http://www.ott.arizona.edu/uploads/ip_policy.pdf</a>. faculty own the intellectual property for their course notes and course materials. The instructor holds the copyright to his/her lectures and course materials, including student notes or summaries that substantially reflect them. Student notes and course recordings are for individual use or for shared use on an individual basis. Selling class notes and/or other course materials to other students or to a third party for resale is not permitted without the instructor’s express written consent. Violations to the instructor’s copyright are subject to the Code of Academic Integrity and may result in course sanctions. Additionally, students who use D2L or UA email to sell or buy these copyrighted materials are subject to Code of Conduct Violations for misuse of student email addresses.</p>
+<p>For more information on the confidentiality of student records, please see <a href="http://www.registrar.arizona.edu/ferpa/default.htm" class="uri">http://www.registrar.arizona.edu/ferpa/default.htm</a></p>
+<p><span class="math inline">\(\bullet\)</span> Requests for incompletes (I) and withdrawal (W) must be made in accordance with university policies which are available at <a href="http://catalog.arizona.edu/2012-13/policies/grade.htm#I" class="uri">http://catalog.arizona.edu/2012-13/policies/grade.htm#I</a> and <a href="http://catalog.arizona.edu/2012-13/policies/grade.htm#W" class="uri">http://catalog.arizona.edu/2012-13/policies/grade.htm#W</a>, respectively.</p>
+<p><span class="math inline">\(\bullet\)</span> The UA’s policy concerning Class Attendance and Administrative Drops is available at: <a href="http://catalog.arizona.edu/2012-13/policies/classatten.htm" class="uri">http://catalog.arizona.edu/2012-13/policies/classatten.htm</a></p>
+</div>
+<div id="grades" class="section level2 hasAnchor" number="1.3">
+<h2><span class="header-section-number">1.3</span> Grades<a href="syllabus.html#grades" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>90%-100% A</p>
+<p>80%-89% B</p>
+<p>70%-79% C</p>
+<p>60%-69% D</p>
+<p>59% and below E</p>
+<p><strong>Graded Items</strong></p>
+<table>
+<caption><strong>Description of Graded Items.</strong> Written projects comprise 40% percent of your grade. For both the midterm and the final project, you will apply the techniques from this class to an actual data. The midterm paper consists of a challenge – forecast the 2024 presidential election. Parts of this assignment will be done individually, other parts will be group work.</caption>
+<colgroup>
+<col width="17%" />
+<col width="55%" />
+<col width="28%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Component</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Percent of Final Grade</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Midterm Project</td>
+<td>Election forecast, short assignments and final report</td>
+<td>15%</td>
+</tr>
+<tr class="even">
+<td>Midterm Exam</td>
+<td>Short Answer/Problems</td>
+<td>25%</td>
+</tr>
+<tr class="odd">
+<td>Final Exam</td>
+<td>Short Answer/Problems</td>
+<td>30%</td>
+</tr>
+<tr class="even">
+<td>Final Paper</td>
+<td></td>
+<td>30%</td>
+</tr>
+</tbody>
+</table>
+<p>We will collaborate, but each person will play a unique role interpreting the results, which will form the basis for your grade. The goal for us, the challenge: <strong>Create statistically informed set of predictions, effectively visualize these predictions, and finally, put the report on a public website.</strong></p>
+<p>How will we do this? First, start by familiarizing yourself with:</p>
+<ul>
+<li><p><strong>Shiny</strong>. Shiny is an open-source R package. It allows one to build interactive visualizations. This can be really important in academic work, as well as data science applications more generally. This book is a good resource, <a href="#id_0" class="uri">https://mastering-shiny.org/</a>. And the documentation on the shiny website is also quite helpful, with many example <a href="#id_0" class="uri">https://shiny.posit.co/r/gallery/</a></p></li>
+<li><p><strong>Github.</strong> Code for the project should be pushed to the class repo.</p>
+<p><strong>crweber9874/advanced_regression</strong></p>
+<p><strong>Data sources.</strong> It is imperative that you research how others have generated election predictions, and where to find data. Should one use historical data, economic data, polling data, lots of polling data, and so forth? The project will entail a considerable amount of work, so it’s important to regularly work on the project, rather than procrastinating until shortly before the due date.</p></li>
+</ul>
+<p><strong>Protocol for Electoral Forecasting Project</strong></p>
+<p>Please adhere to the following due dates.</p>
+<ul>
+<li><p>August 27, 2024: Create two research groups.</p></li>
+<li><p>September 10, 2024: Generate model ideas.</p></li>
+<li><p>October 1, 2024: Submit cleaned data, code, and documentation.</p></li>
+<li><p>October 22: Submit predictions and brief report.</p></li>
+<li><p>October 29: Build shiny application</p></li>
+</ul>
+<p>You must also complete a final project. This should include an analysis using methods from this class – i.e., the regression techniques from this class. The final paper should be between 10-15 pages in length. It is up to you to locate a dataset for both papers! I recommend exploring data options early in the semester, by searching for data on the ICPSR, Dataverse, or other data repositories. Alternatively, you are welcome to use data you have collected. You are free to choose the topic, but you must be able to provide me with the data used in your report. Again, your code should be shared on GitHub. If you or your advisor has proprietary data which I cannot access, you should not use this. I must be able to verify that you did all the necessary calculations honestly and accurately, which requires me being able to access any data you use. Also, if you rely on your own data, you must adhere to the University of Arizona’s Institutional Review Board requirements.</p>
+<p>The paper should include all the elements of a research paper. That said, my primary interest rests in your analyses. I ask that you be quite thorough when presenting the results. It is not sufficient to just run a regression and present the point estimates. Your paper should include detailed interpretation, robustness checks, and post-estimation clarification (which often come in the form of graphics). It should be a high quality paper; if you would not be comfortable presenting it at a conference, you should not feel comfortable handing it in for a grade. <em>Do not just cut and paste R output. Tables and figures should be presented in a professional manner. I will deduct points for cut-and-pasted output from R.</em></p>
+<p>Your statistical models should be theoretically informed. I do not require a full-fledged introduction/literature review, though you should spend a page or two briefly describing the relevant literature. It is essential to include the formal hypotheses you will test, which should relate to this one/two page review. I will need to verify that your empirical tests match your expectations. Please follow American Psychological Association (APA) style or American Journal of Political Science (AJPS) style. The references should appear at the end of your manuscript. Please do not place the references in footnotes.</p>
+<p>I strongly recommend you meeting with me periodically throughout the semester to discuss these projects.</p>
+<p>There will be a midterm exam (25%) and a final exam (30%). The final will be cumulative, and will cover all material from the semester. The midterm and final should be completed in-class. You may use your notes and the course materials to complete the both exams. The exam must be completed independently.</p>
+<p><strong>Important Due Dates for Graded Material</strong></p>
+<p>Please adhere to the following due dates.</p>
+<ul>
+<li><p>August 27, 2024: Create two research groups (midterm project).</p></li>
+<li><p>September 10, 2024: Model assignment (midterm project).</p></li>
+<li><p>October 1, 2024: Submit cleaned data, code, and documentation (midterm project).</p></li>
+<li><p>October 22: Submit predictions and brief report (midterm project).</p></li>
+<li><p>November 5: Midterm Exam (in-class).</p></li>
+<li><p>December 17: Final Exam (in-class).</p></li>
+<li><p>December 17: Final Project. Please upload here</p></li>
+</ul>
+<p><a href="https://arizona.box.com/s/snd55jtnk3iyygzgi8k3of0v5eq8fr7i" class="uri">https://arizona.box.com/s/snd55jtnk3iyygzgi8k3of0v5eq8fr7i</a>.</p>
+</div>
+<div id="course-outline" class="section level2 hasAnchor" number="1.4">
+<h2><span class="header-section-number">1.4</span> Course Outline<a href="syllabus.html#course-outline" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Please read all assigned readings prior to the listed meeting times. Please note that the course schedule is subject to change at my discretion. You are responsible for announced changes.</p>
+<p><em>Key</em></p>
+<p><span class="math inline">\(\bullet\)</span> indicates a required reading</p>
+<p><span class="math inline">\(\rightarrow\)</span> indicates a recommended reading</p>
+<p><span class="math inline">\(\star\)</span> indicates an assignment.</p>
+<p><span class="math inline">\(\cdot\)</span> indicates midterm project topic</p>
+<p>Week 1 (8/27): Introduction</p>
+<p><span class="math inline">\(\bullet\)</span> Long, Chapter 1.</p>
+<p><span class="math inline">\(\bullet\)</span> McElreath, Chapter 1</p>
+<p><span class="math inline">\(\cdot\)</span> Organize into small groups</p>
+<p>Week 2 (9/3): Introduction to Maximum Likelihood and the Generalized Linear Model, I</p>
+<p><span class="math inline">\(\bullet\)</span> Long, Chapter 2.</p>
+<p><span class="math inline">\(\bullet\)</span> McElreath, Chapter 2</p>
+<p><span class="math inline">\(\rightarrow\)</span> Gelman and Hill, Chapters 3 and 4.</p>
+<p><span class="math inline">\(\cdot\)</span> Discuss data and model ideas.</p>
+<p><span class="math inline">\(\star\)</span> <strong>Models</strong>. For next week, please bring model ideas to class. How should we predict election outcomes? What data should we use? Please write a brief (1-2 page) report listing ideas, perhaps elaborating on what others have done. There is no need for a formal literature review, but outlining the state of forecasting would be useful.</p>
+<p>Week 3 (9/10): Introduction to Maximum Likelihood and the Generalized Linear Model, II</p>
+<p><span class="math inline">\(\bullet\)</span> Long, Chapter 3.</p>
+<p><span class="math inline">\(\bullet\)</span> McElreath, Chapter 3</p>
+<p><span class="math inline">\(\rightarrow\)</span> Eliason, Scott R. 1993. Maximum Likelihood Estimation: Logic and Practice. Sage Monographs.</p>
+<p><span class="math inline">\(\rightarrow\)</span> Fox, John. 2008. Applied Regression Analysis and Generalized Linear Models, Second Edition. Sage: New York. Chapter 15.</p>
+<p><span class="math inline">\(\cdot\)</span> Discuss data and model ideas.</p>
+<div id="building-a-statistical-model" class="section level3 hasAnchor" number="1.4.1">
+<h3><span class="header-section-number">1.4.1</span> Building a Statistical Model<a href="syllabus.html#building-a-statistical-model" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Week 4 (9/17): Building a Model</p>
+<p><span class="math inline">\(\bullet\)</span> McElreath, Chapter 4, and (pp. 323 - 345)</p>
+<p><span class="math inline">\(\bullet\)</span> Freedman, Paul, Michael Franz, and Kenneth Goldstein. 2004. “Campaign Advertising and Democratic Citizenship.” American Journal of Political Science, 48(4): 723-741.</p>
+<p><span class="math inline">\(\bullet\)</span> King, Gary and Langche Zeng. 2001. “Logistic Regression in Rare Events Data.” Political Analysis, 9(2): 137-173.</p>
+<p><span class="math inline">\(\rightarrow\)</span> John Fox. 2008. Applied Regression Analysis and Generalized Linear Models, Second Edition. Sage: New York. Chapter 14.</p>
+<p><span class="math inline">\(\rightarrow\)</span> King, Chapters 5, 6.</p>
+<p><span class="math inline">\(\cdot\)</span> Discuss data and model ideas.</p>
+<p><span class="math inline">\(\star\)</span> <strong>Model</strong> <strong>Strategy</strong>. As a group, develop a plan to generate electoral predictions. What are the strengths and weaknesses of your approach. Each group should meet outside of regular class time and draft a 1-2 page report for next week.</p>
+</div>
+<div id="estimation-and-model-fit" class="section level3 hasAnchor" number="1.4.2">
+<h3><span class="header-section-number">1.4.2</span> Estimation and Model Fit<a href="syllabus.html#estimation-and-model-fit" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Week 5 (9/24): Estimation, Prediction, Simulation</p>
+<p><span class="math inline">\(\bullet\)</span> McElreath, Chapter 5</p>
+<p><span class="math inline">\(\bullet\)</span> King, Gary, Michael Tomz and Jason Wittenberg. 2000. “Making the Most of Statistical Analyses: Improving Estimation and Interpretation.” American Journal of Political Science 44(2): 341-355.</p>
+<p><span class="math inline">\(\bullet\)</span> Greenhill, Brian, Michael Ward, and Audrey Sacks. 2011. “The Separation Plot: A New Visual Method for Evaluating the Fit of Binary Models.” American Journal of Political Science, 55(4): 991-1002.</p>
+<p><span class="math inline">\(\bullet\)</span> Herron, Michael. 2000. “Post Estimation Uncertainty in Limited Dependent Variable Models.” Political Analysis, 8(1): 83-98.</p>
+<p><span class="math inline">\(\cdot\)</span> Discuss data, code, and reproducibility</p>
+<p><span class="math inline">\(\star\)</span> <strong>Data</strong>. As a group, prepare data. Clean these data, prepare them for distribution, and write clear documentation.</p>
+<p><strong>Simulation based approaches</strong></p>
+<p>Week 6 (10/1): Introduction to Causal Inference and the Directed Acyclic Graph (DAG)</p>
+<p><span class="math inline">\(\bullet\)</span> McElreath, Chapter 6</p>
+<p><span class="math inline">\(\bullet\)</span> Jackman, Simon. 2000. “Estimation and Inference via Bayesian Simulation: An Introduction to Markov-Chain Monte Carlo.” American Journal of Political Science, 44(2): 375-404.</p>
+<p><span class="math inline">\(\bullet\)</span> Western, Bruce and Simon Jackman. 1994. “Bayesian Inference for Comparative Research.” American Political Science Review, 88(2): 412-423.</p>
+<p><span class="math inline">\(\bullet\)</span> Adrian Raftery. 1995. “Bayesian Model Selection in Social Research.” Sociological Methodology, 25, 111-163.</p>
+<p><span class="math inline">\(\rightarrow\)</span> Stan User’s Manual, Chapter 6.</p>
+<p><span class="math inline">\(\rightarrow\)</span> Fox, John. 2008. Applied Regression Analysis and Generalized Linear Models, Second Edition. Sage: New York. Chapter 22.\</p>
+<p><span class="math inline">\(\cdot\)</span> Introduction to Shiny</p>
+<p><span class="math inline">\(\star\)</span> \textbf{Midterm Project. Generate predictions, absolutely no later than 10/22. Each group should submit a csv file with the following headers: \textbf{state, \textbf{republican\_vote\_share\_prediction, \textbf{democratic\_vote\_share\_prediction. Thus will be three files – two student groups, and my own. One 10/29, we’ll build a Shiny app. Each group should also provide a 1-2 page report describing their statistical method, and perhaps walking the reader through code. Perhaps use R Markdown.</p>
+<p>Models with Multi-category Discrete Variables</p>
+<p>Week 7 (10/8): Multicategory models</p>
+<p><span class="math inline">\(\bullet\)</span> Long, Chapters 5 and 6</p>
+<p><span class="math inline">\(\bullet\)</span> McElreath, pp. 359 - 368</p>
+<p><span class="math inline">\(\bullet\)</span> Alvarez, Michael and Jonathan Nagler. 1998. “When Politics and Models Collide: Estimating Models of Multiparty Elections.” American Journal of Political Science, 42(1): 55-96.</p>
+<p>Count Data</p>
+<p>Week 8 (10/15):</p>
+<p><span class="math inline">\(\bullet\)</span> Long, Chapter 8.</p>
+<p><span class="math inline">\(\bullet\)</span> McElreath, pp. 345-359; pp. 369-380</p>
+<p><span class="math inline">\(\bullet\)</span> King, Gary. 1988. “Statistical Models for Political Science Event Counts: Bias in Conventional Procedures and Evidence for the Exponential Poisson Regression Model.” American Journal of Political Science, 32(3): 838-863.</p>
+<p>Week 9 (10/22): Poisson, Overdispersion, and Underdispersion</p>
+<p><span class="math inline">\(\bullet\)</span> McElreath, pp. 369-380</p>
+<p><span class="math inline">\(\bullet\)</span> Wilson, Matthew and James Piazza. 2013. “Autocracies and Terrorism: Conditioning Effects of Authoritarian Regime Type on Terrorist Attacks.” American Journal of Political Science, 57(4): 941-955.</p>
+<p><span class="math inline">\(\bullet\)</span> Box-Steffensmeier, Janet M., and Bradford S. Jones. 1997. “Time is of the Essence: Event History Models in Political Science.” American Journal of Political Science, 41(4): 1414-1461.</p>
+<p>\textbf{Censored Data and Selection Bias</p>
+<p>Week 10 (10/29): Censoring, Selection Bias</p>
+<p><span class="math inline">\(\bullet\)</span> Long, Chapter 7.</p>
+<p><span class="math inline">\(\bullet\)</span> Goren, Paul, Christopher Federico and Miki Caul Kittilson. 2009. “Source Cues, Partisan Identities, and Political Value Expression.” American Journal of Political Science, 53(4): 805-820.</p>
+<p><span class="math inline">\(\bullet\)</span> Boehmke, Frederic, Daniel Morey, and Megan Shannon. 2006. “Selection Bias and Continuous-Time Duration Models: Consequences and Proposed Solutions.” American Journal of Political Science, 50(1): 192-207.</p>
+<p>Week 11 (11/5): Midterm Exam</p>
+<p><strong>Midterm Exam.</strong> You may use notes and/or the textbook, though no computers, tablets, or phones may be used. (Frankly, AI does a great job answering my questions, and I need to protect the integrity of the exam). The exception is your phone can be used as a calculator.</p>
+<p>Multilevel Data Structures.</p>
+<p>Week 12 (11/12): Multilevel Analysis</p>
+<p><span class="math inline">\(\bullet\)</span> McElreath, Chapter 13</p>
+<p>Week 13 (11/19): Multilevel Analysis, Continued</p>
+<p><span class="math inline">\(\bullet\)</span> McElreath, Chapter 14.</p>
+<p><span class="math inline">\(\bullet\)</span> Steenbergen, Marco and Bradford Jones. 2002. “Modeling Multilevel Data Structures.” American Journal Political Science, 46(1): 218-237.</p>
+<p><span class="math inline">\(\bullet\)</span> Stegmuller, Daniel. 2014.”How Many Countries for Multilevel Modeling? A Comparison of Frequentist and Bayesian Approaches.”American Journal Political Science, 57(3): 748-761.</p>
+<p>Regularization and Non-Linearity</p>
+<p>Week 14 (11/26): The Ridge and Lasso Models</p>
+<p><span class="math inline">\(\bullet\)</span> McElreath, Chapter 7</p>
+<p><span class="math inline">\(\bullet\)</span> Please read Chapter 6 in An Introduction to Statistical Learning. This chapter can be downloaded for free here: <a href="http://web.stanford.edu/~hastie/pub.htm" class="uri">http://web.stanford.edu/\~hastie/pub.htm</a></p>
+<p><span class="math inline">\(\bullet\)</span> Please read Chapter 5 in The Elements of Statistical Learning, Chapter 5. This chapter can be downloaded for free here: <a href="http://web.stanford.edu/~hastie/pub.htm" class="uri">http://web.stanford.edu/\~hastie/pub.htm</a></p>
+<p>Week 15 (12/3):</p>
+<p><span class="math inline">\(\bullet\)</span> Gelman and Hill, Chapter 20.</p>
+<p><span class="math inline">\(\bullet\)</span> End of semester workshop.</p>
+<p>Week 16 (12/11): Workshop</p>
+<p><span class="math inline">\(\star\)</span> <strong>Final</strong> <strong>Exam</strong>. You may use notes and/or the textbook, though no computers, tablets, or phones may be used. (Frankly, AI does a great job answering my questions, and I need to protect the integrity of the exam). The exception is your phone can be used as a calculator. The exam will take place on Tuesday, 12/17 from 8-10AM</p>
+<p><span class="math inline">\(\star\)</span> Paper II is due by 12/17, 5PM. Please upload to D2L folder; code should be uploaded to your personal github repository.</p>
+<p><strong>Have a wonderful break</strong></p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="introduction.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/syllabus.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
